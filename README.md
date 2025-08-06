@@ -25,12 +25,14 @@
 
 
 ## MVC 패턴
--
-@Entity : Article.java
-@Repository : ArticleRepository.java
-@Service : ArticleService.java
-@Controller : ArticleController.java
-폼 : ArticleFrom
+
+SpringBoot에서 요구하는 프로그램 구조이다
+M : model, 모델
+V : view, 뷰
+C : controller, 컨트롤러 
+
+모든 요청과 조작은 컨트롤러에서 담당한다. 뷰는 사용자에게 정보를 보여주는 역할을 담당한다. 모델은 데이터를 가져오고 저장하는 등, 직접 데이터를 만지는 역할을 한다
+서로의 역할을 분명하게 나누어, 의존성을 줄이고, 더 간결한 시스템구조를 만드는 것을 목표로 한다.
 
 ## 스프링에서 의존성 주입(DI) 방법 3가지 방법
 - 프로젝트를 만들때 주입한다
